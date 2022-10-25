@@ -1,0 +1,125 @@
+body {
+    background-color: var(--dark);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+        Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    color: var(--pale);
+}
+
+:root {
+    --pale: whitesmoke;
+    --dark: darkslategray;
+    --golden: rgb(230, 179, 13); 
+    --sand: rgb(207, 202, 195);
+}
+
+.page-title {
+    font-size: 30px;
+    background-color: var(--sand);
+    color: var(--dark);
+    padding: 10px;
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.page-title nav{
+    font-size: 30px;
+    float: right;
+    padding-top: 20px;
+}
+
+.page-title nav ul{
+    list-style-type: none;
+}
+
+.page-title nav ul li{
+    display:inline-flex;
+    margin-left: 10px;
+    flex-direction: row;
+}
+
+a{
+    font-size: 20px;
+    color: var(--dark);
+    padding: 10px;
+}
+
+aside {
+        border-color: var(--pale);
+        border-right: solid;
+        border-width: 3px;
+        float: left;
+        margin-right: 20px;
+        width: 20%;
+        font-size: 30px;
+        display: flex;
+        flex-direction: column;
+  }
+
+  #my-face {
+    max-height: 200px;
+    /* flex: 0 1 100px; */
+    padding-right: 20px;
+  }
+
+    .float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+.banner{
+    height: 20px;
+    width: 100%;
+}
+
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .about-me {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+#about-me {
+    text-align: center;
+}
+
+#my-work-thus-far {
+    padding-top: 180px;
+    padding-bottom: 400px;
+    text-align: center;
+}
+
+.my-work-thus-far {
+    padding: 20px;
+    padding-top: 60px;
+}
+
+#hcf {
+    /* flex: 0 1 200px; */
+    max-height: 400px;
+}
+
+#contact-me {
+    text-align: center;
+}
+
+.contact-me {
+    width: 100%;
+    height: 60px;
+    padding: 60px;
+    font-size: 20px;
+}
+
+#resume {
+    text-align: center;
+    padding: 50;
+}
+
+    footer {
+    text-align: center;
+    clear:both;
+}
+/* found the gear picture at <a target="_blank" href="https://icons8.com/icon/22991/gears">Gears</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */
