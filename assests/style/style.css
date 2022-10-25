@@ -1,3 +1,5 @@
+
+
 body {
     background-color: var(--dark);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
@@ -10,6 +12,7 @@ body {
     --dark: darkslategray;
     --golden: rgb(230, 179, 13); 
     --sand: rgb(207, 202, 195);
+    --navy: darkblue;
 }
 
 .page-title {
@@ -33,9 +36,8 @@ body {
 }
 
 .page-title nav ul li{
-    display:inline-flex;
+    display:inline;
     margin-left: 10px;
-    flex-direction: row;
 }
 
 a{
@@ -52,58 +54,65 @@ aside {
         margin-right: 20px;
         width: 20%;
         font-size: 30px;
-        display: flex;
-        flex-direction: column;
   }
 
   #my-face {
     max-height: 200px;
-    /* flex: 0 1 100px; */
     padding-right: 20px;
+    display: inline-block;
   }
-
-    .float-right {
-    float: right;
-    margin-left: 25px;
-}
 
 .banner{
     height: 20px;
     width: 100%;
 }
 
-.main-section {
-    display: flex;
-    flex-wrap: wrap;
-}
-
     .about-me {
         font-size: 20px;
         padding: 10px;
+        justify-content: space-between;
+        display: flex;
     }
 
+    .about-me p{
+        display:inline;
+        
+    }
 #about-me {
     text-align: center;
 }
 
 #my-work-thus-far {
-    padding-top: 180px;
-    padding-bottom: 400px;
+    padding-top: 240px;
+    padding-bottom: 500px;
     text-align: center;
 }
 
 .my-work-thus-far {
     padding: 20px;
     padding-top: 60px;
+    position: relative;
 }
 
 #hcf {
-    /* flex: 0 1 200px; */
-    max-height: 400px;
+    max-height: 300px;
+    position: relative;
+}
+
+.hcf::after {
+    content: "Code Refactor";
+    position: absolute;
+    color: var(--pale);
+    font-size: 20px;
+    top: 90px;
+    left: 400px;
+    background-color: var(--navy);
+    padding: 4px;
 }
 
 #contact-me {
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .contact-me {
@@ -122,4 +131,9 @@ aside {
     text-align: center;
     clear:both;
 }
-/* found the gear picture at <a target="_blank" href="https://icons8.com/icon/22991/gears">Gears</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */
+
+@media screen and (max-width: 822px) {
+    #hcf{
+        width: 50%;
+    }
+}
