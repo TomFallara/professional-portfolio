@@ -91,12 +91,18 @@ aside {
 .my-work-thus-far {
     padding: 20px;
     padding-top: 60px;
-    position: relative;
 }
 
 #hcf {
     max-height: 300px;
+    display: inline;
+}
+
+.hcf {
+    height: 400px;
+    width: 600px;
     position: relative;
+    display: inline;
 }
 
 .hcf::after {
@@ -104,10 +110,10 @@ aside {
     position: absolute;
     color: var(--pale);
     font-size: 20px;
-    top: 90px;
-    left: 400px;
+    left: 20px;
     background-color: var(--navy);
     padding: 4px;
+    width: 25%;
 }
 
 #contact-me {
@@ -135,5 +141,8 @@ aside {
 @media screen and (max-width: 822px) {
     #hcf{
         width: 50%;
+    }
+    .hct::after {
+        font-size: 10px;
     }
 }
