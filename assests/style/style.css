@@ -12,7 +12,7 @@ body {
     --dark: darkslategray;
     --golden: rgb(230, 179, 13); 
     --sand: rgb(207, 202, 195);
-    --navy: darkblue;
+    --navy: rgb(33, 33, 53);
 }
 
 .page-title {
