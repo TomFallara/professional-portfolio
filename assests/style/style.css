@@ -116,6 +116,19 @@ aside {
     width: 25%;
 }
 
+
+#project-1 {
+    max-height: 200px;
+    display: inline
+}
+
+.project-1 {
+    height: 200px;
+    width: 300px;
+    position: relative;
+    display: inline
+}
+
 #contact-me {
     text-align: center;
     margin-bottom: 40px;
